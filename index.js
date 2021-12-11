@@ -1,4 +1,4 @@
-import { XMLParser, XMLBuilder } from "fast-xml-parser";
+const { XMLParser, XMLBuilder } = require("fast-xml-parser");
 
 function parseXML(contents) {
     const parser = new XMLParser();
@@ -17,14 +17,14 @@ function buildXML(obj) {
     return builder.build(obj);
 };
 
-export function readVersion(contents) {
+function readVersion(contents) {
     const pom = parseXML(contents);
     verifyPom(pom);
 
     return pom.project.version;
 };
 
-export function writeVersion(contents, version) {
+function writeVersion(contents, version) {
     const pom = parseXML(contents);
     verifyPom(pom);
 
@@ -32,3 +32,8 @@ export function writeVersion(contents, version) {
 
     return buildXML(pom);
 };
+
+module.exports = {
+    readVersion,
+    writeVersion
+}

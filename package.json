@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A standard-version updater for maven projects",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "test": "mocha"
   },
