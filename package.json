@@ -20,5 +20,19 @@
   "bugs": {
     "url": "https://github.com/tobi6112/standard-version-maven/issues"
   },
-  "homepage": "https://github.com/tobi6112/standard-version-maven#readme"
+  "homepage": "https://github.com/tobi6112/standard-version-maven#readme",
+  "devDependencies": {
+    "semantic-release": "^18.0.1"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer", 
+      "@semantic-release/release-notes-generator", 
+      "@semantic-release/npm", 
+      "@semantic-release/github"
+    ]
+  }
 }
