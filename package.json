@@ -1,0 +1,24 @@
+{
+  "name": "standard-version-maven",
+  "version": "1.0.0",
+  "description": "A standard-version updater for maven projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobi6112/standard-version-maven.git"
+  },
+  "keywords": [
+    "standard-version",
+    "maven",
+    "java"
+  ],
+  "author": "tobi6112",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobi6112/standard-version-maven/issues"
+  },
+  "homepage": "https://github.com/tobi6112/standard-version-maven#readme"
+}
