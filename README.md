@@ -4,7 +4,7 @@ A Maven POM updater for [standard-version](https://github.com/conventional-chang
 
 ## Usage
 
-```
+```js
 module.exports = {
   bumpFiles: [
     {
