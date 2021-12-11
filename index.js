@@ -7,7 +7,7 @@ function parseXML(contents) {
 };
 
 function verifyPom(pomObject) {
-    if(pomObject.project?.version) {
+    if(!pomObject.project?.version) {
         throw new Error("Could not extract project version from the provided pom file. Is it correctly specified?");
     }
 };
