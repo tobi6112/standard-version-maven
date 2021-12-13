@@ -4,6 +4,10 @@ A Maven POM updater for [standard-version](https://github.com/conventional-chang
 
 ## Usage
 
+```
+npm install --save-dev standard-version-maven
+```
+
 ```js
 module.exports = {
   bumpFiles: [
